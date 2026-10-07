@@ -1,0 +1,21 @@
+{
+  "name": "affiliate-url-generator",
+  "version": "1.0.0",
+  "description": "Affiliate image URL generator and share page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "affiliate",
+    "url",
+    "share"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2"
+  }
+}

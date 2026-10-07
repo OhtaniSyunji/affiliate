@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>affiliateURL</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="card">
+        <header class="header">
+          <h1>affiliateURL</h1>
+        </header>
+
+        <main class="content">
+          <section id="formView">
+            <div class="field">
+              <label for="targetUrl">飛ばしたいサイトのURL</label>
+              <input id="targetUrl" type="url" placeholder="https://example.com" />
+            </div>
+
+            <div class="field">
+              <label for="imageInput">画像を選択</label>
+              <div class="upload-box">
+                <input id="imageInput" type="file" accept="image/*" />
+              </div>
+
+              <div class="preview-wrap">
+                <div id="preview" class="image-preview" aria-live="polite">
+                  <img id="selectedImage" alt="選択した画像" />
+                  <div class="play-button" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+
+            <button id="createBtn" class="create-btn" type="button">作成</button>
+          </section>
+
+          <section id="resultBox" class="result-box" aria-live="polite">
+            <p class="muted">作成したURL</p>
+            <div class="result-row">
+              <div id="generatedUrl" class="result-url"></div>
+              <button id="copyBtn" class="copy-btn" type="button">コピー</button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
