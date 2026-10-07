@@ -103,18 +103,18 @@ app.get('/share/:id', (req, res) => {
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>affiliateURL</title>
+        <title></title>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="affiliateURL" />
-        <meta property="og:description" content="再生ボタン付きの画像リンクです" />
         <meta property="og:url" content="${baseUrl}/share/${data.id}" />
         <meta property="og:image" content="${imageUrl}" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="affiliateURL" />
-        <meta name="twitter:description" content="再生ボタン付きの画像リンクです" />
         <meta name="twitter:image" content="${imageUrl}" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
         <style>
           :root {
             --bg: #f4f7fb;
